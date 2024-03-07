@@ -60,7 +60,7 @@ return [
     // Example: "admin 🔗 LinkStack"
     //                 ⤌----------⤍
     //                 ⬑ What you can change with this setting.
-    'linkstack_title' => 'Explore the Web',
+    'linkstack_title' => '',
 
 
     // Either "true", "false" or "auth".

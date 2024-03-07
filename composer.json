@@ -51,8 +51,7 @@
     "scripts": {
         "post-update-cmd": [
             "php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "php artisan lang:update",
-            "echo.> storage/app/ISINSTALLED"
+            "php artisan lang:update"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
