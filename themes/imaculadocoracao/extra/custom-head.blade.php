@@ -16,7 +16,8 @@ Down below, you can find a few examples using this function:
 
 <link rel="stylesheet" href="{{themeAsset('your.css')}}">
 <script src="{{themeAsset('your.js')}}"></script>
-<style>body{background-image: url({{themeAsset('your.png')}});}</style>
+<!-- <style>body{background-image: url({{themeAsset('your.png')}});}</style> -->
 
 --}}
 
+<link rel="stylesheet" href="{{themeAsset('your.css')}}">

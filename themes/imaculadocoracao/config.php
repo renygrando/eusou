@@ -9,7 +9,7 @@ return [
     |
     | The theme config allows you to configure how LittleLink Custom should treat your theme.
     | All settings can either be set to "true" or "false", unless stated otherwise.
-    | 
+    |
     | The settings below change how your buttons behave.
     |
     */
@@ -24,7 +24,7 @@ return [
     // This can be useful if you do not want to update your brand styles every time a new button is added.
     // If true the file "brands.css" wont be used anymore and can be removed.
     'use_default_buttons' => 'false',
-    
+
     // With this option, you can disallow custom background images set by users.
     'allow_custom_background' => 'true',
 
@@ -36,16 +36,16 @@ return [
     |--------------------------------------------------------------------------
     |
     | Custom code allows you to inject customized Blade, PHP, HTML, JavaScript and CSS code.
-    | 
-    | In your "extra" folder, you will find 3 separate files for injecting your code to 
+    |
+    | In your "extra" folder, you will find 3 separate files for injecting your code to
     | different places on the final page (head, body, at the end of the body).
-    | 
-    | You may also attach custom assets like CSS, JS, or images. 
+    |
+    | You may also attach custom assets like CSS, JS, or images.
     | You can find instructions for this in the files in your extra folder.
-    | 
+    |
     */
 
-    'enable_custom_code' => 'false',
+    'enable_custom_code' => 'true',
 
     // Disable individual files (only applies if above is 'true').
     'enable_custom_head'     => 'true',
@@ -60,12 +60,12 @@ return [
     |
     | You may add custom icons to your theme. 
     | These icons are stored under: .../extra/custom-icons.
-    | 
+    |
     | You can adjust the file extension types to use other files than just SVGs.
     |
     */
 
-    'use_custom_icons' => 'false',
+    'use_custom_icons' => 'true',
 
     // Is not set correct this will cause errors.
     'custom_icon_extension' => '.svg', // (.png, .jpg ...)

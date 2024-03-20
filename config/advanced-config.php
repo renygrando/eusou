@@ -90,7 +90,7 @@ return [
     // The URL prefix is the symbol that comes before a LinkStack URL.
     // For example the '@' in 'example.com/@admin'.
     // If empty no prefix is required.
-    'custom_url_prefix' => '+',
+    'custom_url_prefix' => '',
     
     /*
     |--------------------------------------------------------------------------
