@@ -6,9 +6,9 @@
 }
 
 .sharediv {
-  position:relative; 
-  top: 30px; 
-  right: 30px; 
+  position:relative;
+  top: 30px;
+  right: 30px;
   padding-bottom: 40px;
 }
 
@@ -53,8 +53,8 @@
     white-space: wrap;
     border-radius: 8px;
     cursor: pointer;
-    color: #000000; 
-    background-color: #efefef
+    color: var(--c1);
+    background-color: var(--c1);
    }
 @media screen and (min-width: 600px) {
   .sharebutton,
@@ -70,15 +70,16 @@
     line-height: 48px;
     letter-spacing: 0.1px;
     white-space: wrap;
-    border-radius: 8px;
+    border-radius: 0;
     cursor: pointer;
-    color: #000000; 
-    background-color: #efefef
+    text-transform: lowercase;
+    color: var(--c1);
+    background-color: var(--c1);
    }
 }
 sharebutton:hover,
 .sharebutton:hover {
-  color: #000000;
+  color: var(--c1);
   opacity: 0.85;
   filter: alpha(opacity=40);
   border-color: #888;

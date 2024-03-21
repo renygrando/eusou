@@ -1,13 +1,13 @@
 html {
-    --s: 100px; /* control the size */
-    --c1: #fefefe;
-    --c2: #fafafa;
-
-    --_s: calc(2 * var(--s)) calc(2 * var(--s));
-    --_g: var(--_s) conic-gradient(at 40% 40%, #0000 75%, var(--c1) 0);
-    --_p: var(--_s) conic-gradient(at 20% 20%, #0000 75%, var(--c2) 0);
+    --c1: #00a6ef;
+    --c2: #ed0044;
+    --c3: #f9e925;
+    --c4: #102d3f;
+    --c5: #f7f7f7;
 }
 h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
     color: black;
 }
 body {
@@ -16,8 +16,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-
-    background-color: #f6f6f6;
+    background-color: var(--c5);
     background-image: linear-gradient(
             45deg,
             #f1f1f1 25%,
@@ -43,10 +42,10 @@ body {
         );
     background-size: 100px 100px;
     background-position: 0 0, 50px 50px, 50px 0px;
-    -webkit-animation: scroll 5s linear infinite;
+    animation: scroll 5s linear infinite;
 }
 
-@-webkit-keyframes scroll {
+@keyframes scroll {
     from {
         background-position: 0 0, 50px 50px, 50px 0;
     }
