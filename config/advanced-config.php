@@ -1,6 +1,6 @@
 <?php
 
-$analytics = 
+$analytics =
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +32,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | Will only be active if "CUSTOM_META_TAGS" is set to "true" in the config.
-    | These tags will only be applied to the home page or if a LinkStack page 
+    | These tags will only be applied to the home page or if a LinkStack page
     | is set as the homepage in the config (for example: HOME_URL="admin").
-    | 
+    |
     | Empty entries will be ignored.
     |
     */
@@ -63,11 +63,11 @@ return [
     'linkstack_title' => '',
 
 
-    // Either "true", "false" or "auth". 
+    // Either "true", "false" or "auth".
     // If "auth" is selected, the share button will only be shown to users on their own page.
     'display_share_button' => 'true',
 
-    
+
     // Do not change here!
     'analytics' => $analytics, // Set on top of page.
 
@@ -91,7 +91,7 @@ return [
     // For example the '@' in 'example.com/@admin'.
     // If empty no prefix is required.
     'custom_url_prefix' => '',
-    
+
     /*
     |--------------------------------------------------------------------------
     | Home Page settings
@@ -103,7 +103,7 @@ return [
 
     // Apply a theme to your Home Page.
     // Enter the name of a theme located in your "themes" folder (for example, 'galaxy').
-    'home_theme' => 'default', // Leave empty or enter 'default' to use the default theme.
+    'home_theme' => 'galaxy', // Leave empty or enter 'default' to use the default theme.
 
     /*
     |--------------------------------------------------------------------------
@@ -112,9 +112,9 @@ return [
     |
     | Here you can configure your own buttons for the Home Page.
     | You can add or remove as many buttons as you like.
-    | 
+    |
     | The syntax of the custom buttons is as follows:
-    | 
+    |
     |       array(
     |         'button' => '',
     |         'link' => '',
@@ -122,18 +122,18 @@ return [
     |         'icon' => '',
     |         'custom_css' => ''
     |       ),
-    | 
+    |
     | In the 'button' field, you have to enter the button name (i.e. 'mastodon', 'github', 'custom'...).
     | You can find a list of all available buttons below.
-    | 
+    |
     | In the 'link' field, you can enter your desired link you may leave this field empty for a display only, non-functional button.
-    | 
+    |
     | In the 'title' field, changes the text on a button, such as 'custom' and 'custom_website'.
-    | 
-    | In the 'icon' field, uses the same syntax as the Button Editor on the Admin Panel. 
+    |
+    | In the 'icon' field, uses the same syntax as the Button Editor on the Admin Panel.
     | This allows you to add your own icons to 'custom' buttons. You can find a list of available icons on linkstack.org/fa.
-    | 
-    | In the 'custom_css' field, here you can enter custom CSS to change the color of your button. 
+    |
+    | In the 'custom_css' field, here you can enter custom CSS to change the color of your button.
     | If you don't feel comfortable working with CSS,
     | you can copy and paste the CSS from the 'Custom CSS' field of the Button Editor on the Admin Panel.
     |

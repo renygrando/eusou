@@ -100,10 +100,10 @@ button:hover,
     color: var(--c5);
     background-color: var(--c4);
 }
-.button.button-default:hover,
+/* .button.button-default:hover,
 .button.button-default:focus {
     /* filter: brightness(90%); */
-}
+
 
 /* LittleLink Custom */
 .button.button-littlelink-custom {
