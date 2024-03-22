@@ -2084,7 +2084,7 @@ html {scroll-behavior: smooth;}
 
   .btn-primary {
     color: #fff;
-    background-color: #007bff;
+    background-color: #11ff00;
     border-color: #007bff; }
     .btn-primary:hover {
       color: #fff;
@@ -8289,7 +8289,7 @@ html {scroll-behavior: smooth;}
     transition: all 0.3s; }
 
   .btn.btn-primary {
-    background: #f8b739;
+    background: #0b2e13;
     border-color: #f8b739; }
     .btn.btn-primary:hover, .btn.btn-primary:focus {
       background: #f8b739 !important;
