@@ -48,7 +48,7 @@
       <link rel="icon" type="image/svg+xml" href="{{ asset('assets/linkstack/images/logo.svg') }}">
       @endif
 
-      <script src="{{asset('assets/js/detect-dark-mode.js')}}"></script>
+      {{-- <script src="{{asset('assets/js/detect-dark-mode.js')}}"></script> --}}
 
       <!-- Library / Plugin Css Build -->
       <link rel="stylesheet" href="{{asset('assets/css/core/libs.min.css')}}" />
@@ -63,9 +63,12 @@
 
       <!-- Custom Css -->
       <link rel="stylesheet" href="{{asset('assets/css/custom.min.css?v=2.0.0')}}" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
       <!-- Dark Css -->
-      <link rel="stylesheet" href="{{asset('assets/css/dark.min.css')}}" />
+      {{-- <link rel="stylesheet" href="{{asset('assets/css/dark.min.css')}}" /> --}}
 
       <!-- Customizer Css -->
             @if(file_exists(base_path("assets/dashboard-themes/dashboard.css")))
@@ -85,7 +88,7 @@
   foreach($pages as $page){}
   @endphp
 
-  <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
+  <body class="theme-color-blue" data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
         <!--Nav Start-->
         <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar fixed-top">
           <div class="container-fluid navbar-inner">
@@ -112,7 +115,7 @@
                 <!--logo End-->
 
 
-                <h4 class="logo-title">{{env('APP_NAME')}}</h4>
+                <h4 style="font-family: 'Permanent Marker', cursive !important;" class="logo-title">{{env('APP_NAME')}}</h4>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon">
@@ -141,7 +144,7 @@
 
                 @if ((env('ALLOW_REGISTRATION')) and !config('linkstack.single_user_mode'))
                 <li class="me-0 me-xl-2">
-                  <a class="btn btn-secondary btn-sm d-flex gap-2 align-items-center" aria-current="page" href="{{ route('register') }}">
+                  <a class="btn btn-outline-gray btn-sm d-flex gap-2 align-items-center" aria-current="page" href="{{ route('register') }}">
                     {{__('messages.Register')}}
                   </a>
                 </li>
@@ -176,7 +179,7 @@
                 </div>
                 @endif
 
-                <h1 class="h1 fw-bold mb-4 pt-4">{{ config('app.name') }}</h1>
+                <h1 style="font-family: 'Permanent Marker', cursive !important;" class="h1 fw-bold mb-4 pt-4">{{ config('app.name') }}</h1>
 
                 <div class="lead">
                   {{-- @if($message->home_message == "default")
@@ -185,7 +188,7 @@
                     {!!$message->home_message!!}
                   @endif --}}
                   <p>
-                    Controle sua presença online com <a href="https://linkstack.org/"><strong>EuSou</strong></a>: centralize recursos em um local único, crie um perfil personalizado e ofereça uma navegação perfeita.
+                    Controle sua presença online com <a style="font-family: 'Permanent Marker', cursive !important;" class="fw-bold" href="https://eusou.gr/">EuSou.</a> <br />Centralize recursos em um local único, crie sua bio personalizada e ofereça uma navegação perfeita.
                   </p>
                 </div>
 
@@ -199,7 +202,7 @@
                   @endif
 
                   @if ((env('ALLOW_REGISTRATION')) and !config('linkstack.single_user_mode'))
-                  <a class="btn btn-secondary me-3" href="{{ route('register') }}">{{__('messages.Register')}}</a>
+                  <a class="btn btn-outline-gray me-3" href="{{ route('register') }}">{{__('messages.Register')}}</a>
                   @endif
               @endauth
                     @endif

@@ -10,6 +10,11 @@
 :focus {
   outline: none;
 }
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
 
 hr {
   margin: 1rem 0;
